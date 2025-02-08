@@ -3,9 +3,92 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <title>Landing Page</title>
     </head>
     <body>
-        <h1>Landing Page</h1>
+        <header>
+            <div class="header-logo">Header Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="#">header link 1</a></li>
+                    <li><a href="#">header link 2</a></li>
+                    <li><a href="#">header link 3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="awesome">
+                <div class="awesome-details">
+                    <h2>This website is awesome.</h2>
+                    <p>
+                        This website has some subtext that goes here under the 
+                        main title. It's a smaller font and the color is lower 
+                        contrast.
+                    </p>
+                    <button>Sign Up</button>
+                </div>
+                <div class="awesome-placeholder">
+                    <img src="image.jpg" alt="placeholder">
+                </div>
+            </section>
+            <section class="random">
+                <h2>Some random information</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="image.jpg" alt="placeholder">
+                        <p>
+                            This is a short description of the image. It's 
+                            probably not very interesting, but it's here to 
+                            take up space.
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="image.jpg" alt="placeholder">
+                        <p>
+                            This is a short description of the image. It's 
+                            probably not very interesting, but it's here to 
+                            take up space.
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="image.jpg" alt="placeholder">
+                        <p>
+                            This is a short description of the image. It's 
+                            probably not very interesting, but it's here to 
+                            take up space.
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="image.jpg" alt="placeholder">
+                        <p>
+                            This is a short description of the image. It's 
+                            probably not very interesting, but it's here to 
+                            take up space.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="quote">
+                <blockquote>
+                    <p>
+                        This is an inspiring quote, or a testimonial from a 
+                        customer. Maybe it's just filling up space, or maybe 
+                        people will actually read it. Who knows? All I know is 
+                        that it looks nice.
+                    </p>
+                    <cite>-Thor, God of Thunder</cite>
+                </blockquote>
+            </section>
+        </main>
+        <footer>
+            <small id="copyright"></small>
+          </footer>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const year = new Date().getFullYear();
+              document.getElementById('copyright').innerHTML = `&copy; The Odin Project ${year}`;
+            });
+          </script>
     </body>
 </html>
