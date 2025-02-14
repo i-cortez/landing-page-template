@@ -6,21 +6,60 @@ body{
 header {
     background-color: #1f2937;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem 8rem;
 }
 .header-logo {
     color: #f9faf8;
     font-size: 24px;
     font-weight: bold;
 }
-ul {
-    list-style-type: none;
+nav ul {
+    list-style: none;
     display: flex;
     gap: 16px;
 }
-a {
+nav a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
+}
+.hero {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 1rem 8rem 4rem;
+}
+.hero-text {
+    max-width: 50%;
+}
+.hero-text #hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+.hero-text p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+.hero-text button {
+    padding: 1rem 2rem;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.hero-image {
+    margin-left: 4rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 200px;
 }
