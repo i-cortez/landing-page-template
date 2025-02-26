@@ -100,15 +100,23 @@ nav a {
     background-color: #e5e7eb;
     padding: 2rem 4rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.quote blockquote{
-    text-align: center;
+.quote .quote-container {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+.quote .quote-container blockquote {
     font-style: italic;
+    font-weight: lighter;
     font-size: 32px;
     color: #1f2937;
+    margin: 0;
 }
-.quote cite {
+.quote .quote-container cite {
     text-align: right;
     font-size: 16px;
     font-weight: bold;
